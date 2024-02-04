@@ -98,7 +98,7 @@ sqlite-devel zlib-devel pkgconfig python3-yaml
 
 # Dependencies for tiles builds:
 sudo dnf install SDL2-devel SDL2_image-devel libpng-devel freetype-devel \
-dejavu-sans-fonts dejavu-sans-mono-fonts advancecomp pngcrush
+dejavu-sans-fonts dejavu-sans-mono-fonts advancecomp pngcrush mesa-libGLU-devel
 ```
 
 Then follow [the above compilation steps](#compiling).
