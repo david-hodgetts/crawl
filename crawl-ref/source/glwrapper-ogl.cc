@@ -143,7 +143,9 @@ GLShapeBuffer *GLShapeBuffer::create(bool texture, bool colour,
 OGLStateManager::OGLStateManager()
 {
     glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-    glClearColor(0.0, 0.0, 0.0, 1.0f);
+    // glClearColor(0.0, 0.0, 0.0, 1.0f);
+    float intensity = 0.15f;
+    glClearColor(intensity, intensity, intensity, 1.0f);
     glDepthFunc(GL_LEQUAL);
 
     m_window_height = 0;
